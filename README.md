@@ -1,2 +1,8 @@
 # sample-task
-Variety of project with some specific requirement fulfillment
+
+## graph-generator
+fetch data through an api and generate graph
+```
+* AngularJs
+* ChartJs
+```

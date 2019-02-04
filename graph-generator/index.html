@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Crypto Currency Exchange Rate</title>
+		<script src="node_modules/angular/angular.min.js"></script>
+		<script src="node_modules/chart.js/dist/Chart.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="src/css/index.css">
+	</head>
+	<body ng-app="myApp">
+		<div ng-controller="myCtrl" id="sm-container">
+			
+			<div id="sm-graphholder">
+				<div id="sm-title">
+					Crypto Currency Exchange Rate
+				</div>
+				<div id="sm-info">
+					<span>Last Updated : <span ng-if="!lastUpdate">Not Availiable </span><span ng-if="lastUpdate">{{lastUpdate}}</span></span>
+					<span id="sm-tech">node.js http-server 0.10.0 / angularjs 1.7.7 / chart.js 2.7.0</span>
+				</div>
+				<div id="sm-graphliner">	
+					<div id="sm-xaxis"><div id="sm-rotate">Price in USD</div></div>
+					<div id="sm-graph"><canvas id="myChart"></canvas></div>
+					<div id="sm-yaxis">Crypto Currency</div>
+				</div>
+			</div>
+			
+		</div>
+		<script src="src/js/index.js"></script>
+	</body>
+</html>
