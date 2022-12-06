@@ -11,6 +11,6 @@
   "dependencies": {
     "angular": "^1.7.7",
     "chart.js": "^2.7.0",
-    "http-server": "^0.10.0"
+    "http-server": "^14.1.1"
   }
 }
